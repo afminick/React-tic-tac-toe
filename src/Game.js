@@ -136,17 +136,20 @@ class Game extends React.Component {
         ];
         for (let i = 0; i< lines.length; i++) {
                 const [a,b,c] = lines[i];
+                console.log(a,b,c);
                 if (marks[a] && marks[a] === marks[b] && marks[a] === marks[c]) {
                     const winner = marks[a];
                     return (<div className='winner'>
                                 <h1>Player {winner} wins!!!</h1>
                             </div>);
-                } else if (!marks.includes('')) {
-                    return (<div className='winner'>
-                                <h1>Tie Game!!</h1>
-                            </div>);
-                };                 
-            } return null
+                } 
+            }  if (!marks.includes('')) {
+                return (<div className='winner'>
+                            <h1>Tie Game!!</h1>
+                        </div>);
+            };                  
+            
+            return null
 };
 
 
