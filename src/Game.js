@@ -145,7 +145,7 @@ class Game extends React.Component {
                 } 
             }  if (!marks.includes('')) {
                 return (<div className='winner'>
-                            <h1>Tie Game!!</h1>
+                            <h1>Cat's Game!!</h1>
                         </div>);
             };                  
             
